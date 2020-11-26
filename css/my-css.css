@@ -8,6 +8,11 @@
     font-size: 54px;
 }
 
+.navbar-expand-lg .dropdown-menu {
+    position: absolute;
+    left: -60px;
+}
+
 .mainHeader{
     background-repeat: no-repeat;
     background-size: cover;
