@@ -20,6 +20,29 @@ $('#likeButton').on('click', function() {
     }
 });
 
+//comment
+$('#submitComment').on('click', function() {
+    let comment = $('#comment').val();
+
+    if(user.isUserLoged){
+        if(comment === '')
+            window.alert('You can\'t insert empty comment');
+        else{
+            $("#comments").append('\
+            <h5 class="mt-1 ">' +
+            user.username +
+            '</h5>\
+            <p class="ml-3">' +
+            comment +
+            '</p>\
+            ');
+        }
+    }else
+        window.alert('You must be logged in to insert comment');
+
+        $('#comment').val('');
+});
+
 //Login procedure
 $('#signInButton').on('click', function() {
     let email = $("#inputEmail").val();

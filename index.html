@@ -74,7 +74,7 @@
   
           <!-- About -->
           <p>
-            (Polish: Pałac Kultury i Nauki; abbreviated PKiN), is a notable high-rise building in central Warsaw, Poland. With a total height of 237 metres (778 ft) it is the tallest building in Poland, the 5th-tallest building in the European Union (including spire) and one of the tallest on the European continent.[1] Constructed in 1955, it houses various public and cultural institutions such as cinemas, theatres, libraries, sports clubs, university faculties and authorities of the Polish Academy of Sciences. Since 2007 it has been enlisted in the Registry of Objects of Cultural Heritage.
+            (Polish: Pałac Kultury i Nauki; abbreviated PKiN), is a notable high-rise building in central Warsaw, Poland. With a total height of 237 metres (778 ft) it is the tallest building in Poland, the 5th-tallest building in the European Union (including spire) and one of the tallest on the European continent.Constructed in 1955, it houses various public and cultural institutions such as cinemas, theatres, libraries, sports clubs, university faculties and authorities of the Polish Academy of Sciences. Since 2007 it has been enlisted in the Registry of Objects of Cultural Heritage.
             Motivated by Polish historical architecture and American art deco high-rise buildings, the PKiN was designed by Soviet Russian architect Lev Rudnev in "Seven Sisters" style and is informally referred to as the Eighth Sister. The Palace was also the tallest clock tower in the world until the installation of a clock mechanism on the NTT Docomo Yoyogi Building in Tokyo, Japan.
           </p>
           <hr>
@@ -85,7 +85,7 @@
             <div class="card-body">
               <form>
                 <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea class="form-control" id="comment" rows="3"></textarea>
                 </div>
                 <button type="submit" id="submitComment" class="btn btn-primary">Submit</button>
               </form>
@@ -94,9 +94,60 @@
   
           <!-- Single Comment -->
           <div class="media mb-4">
-            <div class="media-body">
-              <h5 class="mt-0">Username</h5>
-              Wow, what a nice place !!!
+            <div class="media-body ml-3" id="comments">
+              <h5 class="mt-1 ">Username</h5>
+              <p class="ml-3">Wow, what a nice place !!!</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Place Content Column -->
+        <div class="">
+  
+          <!-- Name -->
+          <h1 class="mt-4" id="nameThing">The Wawel Royal Castle</h1>
+          
+          <hr>
+  
+          <!-- Where -->
+          <p>	Old Town, Kraków, Poland <button type="submit" id="likeButton" class="btn btn-outline-secondary bg-light ml-4 btn-lg"> <span id="spanLike">Like</span></button>
+          </p>
+
+          <hr>
+  
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/castle.jpg" alt="">
+  
+          <hr>
+  
+          <!-- About -->
+          <p>
+            The Wawel Royal Castle (Polish pronunciation: [ˈvavɛl]; Zamek Królewski na Wawelu) is a castle residency located in central Kraków, Poland, and the first UNESCO World Heritage Site in the world. Built at the behest of King Casimir III the Great, it consists of a number of structures from different periods situated around the Italian-styled main courtyard. The castle, being one of the largest in Poland, represents nearly all European architectural styles of medieval, renaissance and baroque periods. The Wawel Royal Castle and the Wawel Hill constitute the most historically and culturally significant site in the country.
+
+           <br><br> The castle is part of a fortified architectural complex erected atop a limestone outcrop on the left bank of the Vistula River, at an altitude of 228 metres above sea level. The complex consists of numerous buildings of great historical and national importance, including the Wawel Cathedral where Polish monarchs were crowned and buried. Some of Wawel's oldest stone buildings can be traced back to 970 AD, in addition to the earliest examples of Romanesque and Gothic architecture in Poland.The current castle was built in the 14th-century, and expanded over the next hundreds of years. In 1978 Wawel was declared the first World Heritage Site as part of the Historic Centre of Kraków.
+          
+          </p>
+          <hr>
+  
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Comment:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" id="comment" rows="3"></textarea>
+                </div>
+                <button type="submit" id="submitComment" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <div class="media-body ml-3" id="comments">
+              <h5 class="mt-1 ">Username</h5>
+              <p class="ml-3">Nice castle !!!</p>
             </div>
           </div>
 
