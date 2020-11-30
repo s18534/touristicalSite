@@ -22,3 +22,8 @@
 .registration{
     font-size: 28px;
 }
+
+.table-wrapper{
+    position: absolute;
+    width: 70%;
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/my-css.css" />
+
+    <title>Admin Page</title>
+  </head>
+  <body style="background-color: rgb(192,192,192);" class="bg-dark">
+    <div class="container-lg">
+      <div class="table-responsive">
+          <div class="table-wrapper" style="background-color: rgb(192,192,192);">
+              <div class="table-title">
+                  <div class="row">
+                      <div class="col-sm-8"><h2>User Details</h2></div>
+                      <div class="col-sm-4">
+                          <button type="button" id="addNew" class="btn btn-info" data-toggle="modal" data-target="#modal"><i></i> Add New</button>
+                        </div>
+                    </div>
+                </div>
+              <table class="table table-bordered" id="productTable">
+                  <thead>
+                      <tr>
+                          <th>E-mail</th>
+                          <th>Password</th>
+                          <th>Username</th>
+                          <th>Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>exampleMail@gmail.com</td>
+                          <td>123</td>
+                          <td>User1</td>
+                          <td>
+                            <button type="submit" id="edit" class="btn btn-outline-primary bg-light mb-2 ">Edit</button>
+                            <button type="submit" id="delete" class="btn  btn-outline-primary bg-light mb-2 ml-2 ">Delete</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>peterpan@gmail.com</td>
+                          <td>2345</td>
+                          <td>User2</td>
+                          <td>
+                            <button type="submit" id="edit" class="btn btn-outline-primary bg-light mb-2 ">Edit</button>
+                            <button type="submit" id="delete" class="btn  btn-outline-primary bg-light mb-2 ml-2 ">Delete</button>
+                          </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>   
+
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Write user data</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email</label>
+                <input type="email" class="form-control" id="adminEmail">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Password</label>
+                <input type="password" class="form-control" id="adminPassword">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Username</label>
+                <input type="text" class="form-control" id="adminUsername">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="saveUser" class="btn btn-primary">Save user</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/my-js.js" ></script>
+    
+  </body>
+</html>
