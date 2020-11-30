@@ -10,6 +10,16 @@ class User{
 
 var user = new User('exampleMail@gmail.com', '123');
 
+//Like or dislike thing
+$('#likeButton').on('click', function() {
+    let text = $("#spanLike").text();
+    if(text == 'Disslike'){
+        $("#spanLike").text('Like');
+    }else{
+        $("#spanLike").text('Disslike');
+    }
+});
+
 //Login procedure
 $('#signInButton').on('click', function() {
     let email = $("#inputEmail").val();

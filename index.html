@@ -11,7 +11,7 @@
 
     <title>Visit Poland</title>
   </head>
-  <body>
+  <body style="background-color: rgb(86, 88, 89)">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="https://en.wikipedia.org/wiki/Poland" class="navbar-brand">
             <img src="assets/flag-button-square-250.png" width="40" height="30" class="d-inline-block align-top" alt="" loading="lazy">
@@ -49,11 +49,70 @@
         </div>
     </header>
 
-    <div>
-        <section>
-            Jebac psy
-        </section>
+    <div class="container" style="background-color: rgb(253,248,245)" >
+
+      <div class="row">
+  
+        <!-- Place Content Column -->
+        <div class="">
+  
+          <!-- Name -->
+          <h1 class="mt-4" id="nameThing">Palace of Culture and Science</h1>
+          
+          <hr>
+  
+          <!-- Where -->
+          <p>	Plac Defilad 1, Warsaw, Poland <button type="submit" id="likeButton" class="btn btn-outline-secondary bg-light ml-4 btn-lg"> <span id="spanLike">Like</span></button>
+          </p>
+
+          <hr>
+  
+          <!-- Image -->
+          <img class="img-fluid rounded" src="assets/palace.jpg" alt="">
+  
+          <hr>
+  
+          <!-- About -->
+          <p>
+            (Polish: Pałac Kultury i Nauki; abbreviated PKiN), is a notable high-rise building in central Warsaw, Poland. With a total height of 237 metres (778 ft) it is the tallest building in Poland, the 5th-tallest building in the European Union (including spire) and one of the tallest on the European continent.[1] Constructed in 1955, it houses various public and cultural institutions such as cinemas, theatres, libraries, sports clubs, university faculties and authorities of the Polish Academy of Sciences. Since 2007 it has been enlisted in the Registry of Objects of Cultural Heritage.
+            Motivated by Polish historical architecture and American art deco high-rise buildings, the PKiN was designed by Soviet Russian architect Lev Rudnev in "Seven Sisters" style and is informally referred to as the Eighth Sister. The Palace was also the tallest clock tower in the world until the installation of a clock mechanism on the NTT Docomo Yoyogi Building in Tokyo, Japan.
+          </p>
+          <hr>
+  
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Comment:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" id="submitComment" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+  
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <div class="media-body">
+              <h5 class="mt-0">Username</h5>
+              Wow, what a nice place !!!
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
+
+  
+
+
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Gabriel Sek 2020</p>
+      </div>
+    </footer>
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
